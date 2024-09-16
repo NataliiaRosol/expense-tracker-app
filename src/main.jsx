@@ -12,11 +12,11 @@ createRoot(document.getElementById('root')).render(
   {/* <Main/> */}
   
   
-  {/* <GlobalState> */}
+  <GlobalState>
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
     
-  {/* </GlobalState> */}
+  </GlobalState>
   </>
 )
