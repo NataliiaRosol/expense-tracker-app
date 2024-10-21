@@ -4,9 +4,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 export default function ExpenseView({type, data}){
 
-console.log(type, data);
-
-  return <Box flex={1} w={'full'} bg={'white'} mr={'4'} mt={'10'} p={'5'} pb={'4'} border={'1px solid'} borderColor={'grey.100'} borderRadius={'12'}>
+  return <Box flex={1} w={'full'} bg={'white'} mt={'10'} p={'5'} pb={'4'} border={'1px solid'} borderColor={'grey.100'} borderRadius={'12'}>
 
     <Flex justifyContent={'space-between'} alignItems={'center'} >
       <Heading size={'md'} color={'blue.700'}>

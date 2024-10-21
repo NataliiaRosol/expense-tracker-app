@@ -21,7 +21,6 @@ export default function Main(){
 
       setTotalExpense(expense);
       setTotalIncome(income);
-      console.log(income);
       
     });
 
@@ -40,7 +39,7 @@ export default function Main(){
     </Flex>
     <Summary totalExpense={totalExpense} totalIncome={totalIncome} isOpen={isOpen} onClose={onClose}/>
 
-    <Flex w={'full'} alignItems={'flex-start'} justifyContent={'space-evenly'} flexDirection={['column','column','column','row', 'row']} >
+    <Flex gap={'5'} bg={'white'} mb={'50'} pl={'5'} pr={'5'} w={'full'} alignItems={'flex-start'} justifyContent={'space-evenly'} flexDirection={['column','column','column','row', 'row']} >
       <ExpenseView data={allTransactions.filter(item => item.type ==='expense')}  type={'expense'} />
       <ExpenseView data={allTransactions.filter(item => item.type ==='income')}  type={'income'}/>
     </Flex>
